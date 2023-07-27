@@ -29,7 +29,7 @@ class MapScreenState extends State<ProfilePage>
             children: <Widget>[
               new Container(
                 height: 250.0,
-                color: Colors.white,
+                color: const Color.fromARGB(2000, 246, 233, 246),
                 child: new Column(
                   children: <Widget>[
                     Padding(
@@ -39,7 +39,7 @@ class MapScreenState extends State<ProfilePage>
                           children: <Widget>[
                             new Icon(
                               Icons.arrow_back_ios,
-                              color: Colors.black,
+                              color: const Color(0xfff6e60a),
                               size: 22.0,
                             ),
                             Padding(
@@ -79,7 +79,7 @@ class MapScreenState extends State<ProfilePage>
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
                                 new CircleAvatar(
-                                  backgroundColor: Colors.red,
+                                  backgroundColor: const Color(0xfff6e60a),
                                   radius: 25.0,
                                   child: new Icon(
                                     Icons.camera_alt,
@@ -236,7 +236,7 @@ class MapScreenState extends State<ProfilePage>
                               ),
                             ],
                           )),
-                      Padding(
+                      /* Padding(
                           padding: EdgeInsets.only(
                               left: 25.0, right: 25.0, top: 25.0),
                           child: new Row(
@@ -266,7 +266,7 @@ class MapScreenState extends State<ProfilePage>
                                 flex: 2,
                               ),
                             ],
-                          )),
+                          )),*/
                       Padding(
                           padding: EdgeInsets.only(
                               left: 25.0, right: 25.0, top: 2.0),
@@ -274,7 +274,7 @@ class MapScreenState extends State<ProfilePage>
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
-                              Flexible(
+                              /* Flexible(
                                 child: Padding(
                                   padding: EdgeInsets.only(right: 10.0),
                                   child: new TextField(
@@ -284,15 +284,15 @@ class MapScreenState extends State<ProfilePage>
                                   ),
                                 ),
                                 flex: 2,
-                              ),
-                              Flexible(
+                              ),*/
+                              /* Flexible(
                                 child: new TextField(
                                   decoration: const InputDecoration(
                                       hintText: "Enter State"),
                                   enabled: !_status,
                                 ),
                                 flex: 2,
-                              ),
+                              ),*/
                             ],
                           )),
                       !_status ? _getActionButtons() : new Container(),
@@ -371,7 +371,7 @@ class MapScreenState extends State<ProfilePage>
   Widget _getEditIcon() {
     return new GestureDetector(
       child: new CircleAvatar(
-        backgroundColor: Colors.red,
+        backgroundColor: const Color(0xfff6e60a),
         radius: 14.0,
         child: new Icon(
           Icons.edit,
